@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/79/14/be/7914bede-b449-f9f1-c59c-4ee815dbddee/source/512x512bb.jpg" alt="">
+            </div>
+            <span>Fernando Movie Finder</span>
+        </div>
+    </header>
+    <div class="search">
+        <div class="search-container">
+            <div class="input-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="inputValue" name="filter-moives" placeholder="Filter by movie" >
+            </div>
+             <button class="button-container" type="submit" id="search-movie"><span>Find Movies</span></button>
+        </div>
+    </div>
+    <div id="movie-search"></div>
+    <div id="movie-container"></div>
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
