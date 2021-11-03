@@ -104,7 +104,7 @@ header {
 }
 
 .button-container {
-    background-color: #3060FF;
+    background-color: #222328;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -115,12 +115,12 @@ header {
 
 .button-container:hover {
     transform: scale(1.08);
-    background: #5a81ff
+    background: 22232;
 }
 
 span {
     color: white;
-    font-size: 15px;
+    font-size: 21px;
 }
 
 #movie-search {
