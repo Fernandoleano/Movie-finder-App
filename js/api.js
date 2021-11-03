@@ -55,3 +55,10 @@ function latestMovies () {
     let render = renderMovie.bind({ title: 'Latest Movies' });
     requestMovie(url, render, error);
 }
+
+function discoverMovies () {
+    let path = '/discover/movie';
+    let url = Url(path);
+    let render = renderMovie.bind({ title: 'Discover Movies' });
+    requestMovie(url, render, error);
+}
