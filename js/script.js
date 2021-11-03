@@ -115,8 +115,21 @@ document.onclick = function(e) {
     }
 }
 
+let buttonScrollTop = document.querySelector('#scrollToTop');
+
+buttonScrollTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 50,
+        left: 0,
+        behavior: "smooth"
+    });
+});
+
+function reviews() {}
+
 upcomingMovies();
 topratedMovies();
 popularMovies();
 nowplayingMovies();
 latestMovies();
+discoverMovies();
