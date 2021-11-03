@@ -176,3 +176,18 @@ section img:hover {
 #content-close {
     cursor: pointer;
 }
+
+#scrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e62739;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
