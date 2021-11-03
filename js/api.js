@@ -44,12 +44,14 @@ function popularMovies () {
 
 function nowplayingMovies () {
     let path = '/movie/now_playing';
+    let url = Url(path);
     let render = renderMovie.bind({ title: 'Now Playing Movies' });
     requestMovie(url, render, error);
 }
 
 function latestMovies () {
     let path = '/movie/latest';
+    let url = Url(path);
     let render = renderMovie.bind({ title: 'Latest Movies' });
     requestMovie(url, render, error);
 }
