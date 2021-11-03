@@ -58,19 +58,29 @@ function frameMovie (video) {
 }
 
 searchButton.onclick = function(e) {
-    e.preventDefault(); // This will not refresh the button when you click on it
-    let value = inputButton.value;
-    movieSearchResult(value);
-    inputButton.value = '';
-    console.log("value: ", value);
+        e.preventDefault(); // This will not refresh the button when you click on it
+        let value = inputButton.value;
+        movieSearchResult(value);
+        inputButton.value = '';
+        console.log("value: ", value);
+
+        
 }
+
+let input = document.getElementById("inputValue");
+input.addEventListener("keyup", function(event) {
+if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("search-movie").click();
+    }
+});
 
 function video (data, content) {
     content.innerHTML = `<p id="content-close">X</p>`;
     let videos = data.results;
     let length = videos.length > 4 ? 4 : videos.length;
     let iframeContainer = document.createElement('div');
-    for (let i = 0; i < videos.length; i++) {
+    for (let i = 0; i < length; i++) {
         let video = videos[i];
         let iframe = frameMovie(video);
         iframeContainer.appendChild(iframe);
