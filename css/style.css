@@ -149,7 +149,7 @@ section img {
     margin-left: 1rem;
 }
 
-img:hover {
+section img:hover {
     margin-left: 0 40px;
     transform: scale(1.2);
     cursor: pointer;
@@ -157,7 +157,7 @@ img:hover {
 
 .content {
     border: 1px solid grey;
-    padding: 20px;
+    padding: 2px;
     display: none;
 }
 
@@ -166,7 +166,7 @@ img:hover {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin: 20px;
+    margin: 2px;
 }
 
 .content-display {
